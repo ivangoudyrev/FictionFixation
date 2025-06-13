@@ -1,27 +1,34 @@
 function InputForm() {
   return (
     <div
-      className="container text-bg-secondary rounded-3 mb-5 ml-1"
+      className="container border rounded-3 mt-3"
       style={{ maxWidth: "658px" }}
     >
-      <form class="row g-3">
+        <p className="text-uppercase text-center fs-1 mb-0 playfair-display">Contact us!</p>
+        <p className="text-center p-0 fs-4 m-0 playfair-display">
+          We love to hear from our listeners
+        </p>
+        <p className="text-center mt-0 playfair-display">
+          (as long as they don't make it weird).
+        </p>
+      <form class="row g-3 text-secondary bg-light rounded m-3">
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">
+          <label for="inputName" class="form-label">
             Name
           </label>
-          <input type="email" class="form-control" id="inputEmail4" />
+          <input type="text" class="form-control" id="inputName" />
         </div>
         <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">
+          <label for="inputLocation" class="form-label">
             City/State
           </label>
-          <input type="password" class="form-control" id="inputPassword4" />
+          <input type="text" class="form-control" id="inputLocation" />
         </div>
         <div class="col-12">
-          <label for="inputAddress" class="form-label">
-            Email (so we can respond) *
+          <label for="inputEmail" class="form-label">
+            Email (so we can respond)
           </label>
-          <input type="text" class="form-control" id="inputAddress" />
+          <input type="email" class="form-control" id="inputEmail" />
         </div>
         <div class="col-12">
           <label for="commentArea" class="form-label">

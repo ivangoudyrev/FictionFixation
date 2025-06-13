@@ -1,7 +1,7 @@
 function AppleFrame() {
   return (
-    <div>
-      <p className="text-uppercase text-center p-3 fs-1 playfair-display">
+    <div className="container border rounded mt-3" style={{ maxWidth: "658px" }}>
+      <p className="text-uppercase text-center fs-1 playfair-display">
         Now Streaming!!!
       </p>
       <div
