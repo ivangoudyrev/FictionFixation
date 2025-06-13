@@ -1,3 +1,4 @@
+import emailjs from "emailjs-com";
 import ButtonAmazon from "./ButtonAmazon";
 import ButtonApple from "./ButtonApple";
 import ButtonAudible from "./ButtonAudible";
@@ -5,6 +6,30 @@ import ButtonPodbean from "./ButtonPodbean";
 import ButtonSpotify from "./ButtonSpotify";
 
 function Subscribe() {
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ku7ed29",
+        "template_hchcq89",
+        e.target,
+        "asEuy2hBS_W8ZBXCW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("You're on the list! 📬");
+          e.target.reset();
+        },
+        (error) => {
+          console.error(error.text);
+          alert("Oops, something went wrong. Try again later.");
+        }
+      );
+  };
+
   return (
     <>
       <div
@@ -35,11 +60,11 @@ function Subscribe() {
             <p className="mb-0">We've got some tea brewing.</p>
             <p className="mt-0">Let us send you an email when it's ready!</p>
           </div>
-          <form className="row g-3 text-secondary text-center bg-light rounded">
-            <div class="col-12">
-              <input type="email" className="form-control" id="inputEmail" placeholder="Enter your email here*" />
+          <form className="row g-3 text-secondary text-center bg-light rounded" onSubmit={handleSubscribe}>
+            <div className="col-12">
+              <input type="email" className="form-control" id="inputEmail" name="email" placeholder="Enter your email here*" required />
             </div>
-            <div class="col-12">
+            <div className="col-12">
               <button type="submit" className="btn btn-primary mb-3">
                 Subscribe
               </button>
