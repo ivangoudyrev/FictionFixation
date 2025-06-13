@@ -10,7 +10,7 @@ function AboutUs() {
         <h2 className="text-center text-uppercase fw-bold mb-3">About Us</h2>
         <div className="bg-white rounded-4 p-3">
           <Message sender="Courtney" text="Hi, I'm Courtney"/>
-          <Message sender="Rose" text="I'm Rose"/>
+          <Message sender="Rose" text="I'm Jose"/>
           <Message sender="Courtney" text="We are long-time friends"/>
           <Message sender="Rose" text="And life-long bookworms"/>
           <Message sender="Courtney" text="We haven't always read the same types of books..."/>
