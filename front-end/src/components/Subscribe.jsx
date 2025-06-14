@@ -36,7 +36,7 @@ function Subscribe() {
         className="container border rounded-3 mt-3 playfair-display"
         style={{ maxWidth: "658px" }}
       >
-        <div className="p-4 m-3 bg-light rounded-4 shadow-sm">
+        <div className="p-4 m-1 bg-light rounded-4 shadow-sm">
           <h2 className="text-center text-uppercase fw-bold mb-3">
             Don't Forget to Subscribe!
           </h2>

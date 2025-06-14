@@ -10,7 +10,7 @@ function Message(props) {
             <img
               src="/assets/rose.avif"
               alt="Rose"
-              className="rounded-circle ms-3"
+              className="rounded-circle ms-1"
               width="60"
               height="60"
             />
@@ -22,7 +22,7 @@ function Message(props) {
             <img
               src="/assets/courtney.avif"
               alt="Courtney"
-              className="rounded-circle me-3"
+              className="rounded-circle me-1"
               width="60"
               height="60"
             />

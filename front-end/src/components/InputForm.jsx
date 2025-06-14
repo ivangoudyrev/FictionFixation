@@ -39,7 +39,7 @@ function InputForm() {
         (as long as they don't make it weird).
       </p>
       <form
-        className="row g-3 text-secondary bg-light rounded m-3"
+        className="row g-3 text-secondary bg-light rounded m-0"
         onSubmit={sendEmail}
       >
         <div className="col-md-6">
@@ -66,7 +66,7 @@ function InputForm() {
           </label>
           <textarea className="form-control" id="commentArea" name="message" required />
         </div>
-        <div className="col-12">
+        <div className="col-12 text-center">
           <button type="submit" className="btn btn-primary mb-3">
             Send
           </button>
