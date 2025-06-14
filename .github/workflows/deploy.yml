@@ -18,9 +18,10 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies and build
+        working-directory: ./front-end
         run: |
-          front-end/npm install
-          front-end/npm run build
+          npm install
+          npm run build
 
       - name: Copy build folder to EC2
         uses: appleboy/scp-action@v0.1.4
