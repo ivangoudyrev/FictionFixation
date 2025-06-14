@@ -19,8 +19,8 @@ jobs:
 
       - name: Install dependencies and build
         run: |
-          npm install
-          npm run build
+          front-end/npm install
+          front-end/npm run build
 
       - name: Copy build folder to EC2
         uses: appleboy/scp-action@v0.1.4
