@@ -30,7 +30,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_KEY }}
           source: "front-end/dist/"
-          target: "/home/ubuntu/ff_front-end_app"
+          target: "/opt/FictionFixation/"
 
       - name: Restart Nginx (optional)
         uses: appleboy/ssh-action@v1.0.0
