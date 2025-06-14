@@ -1,11 +1,12 @@
 function AppleFrame() {
   return (
-    <div className="container border rounded mt-3" style={{ maxWidth: "658px" }}>
+    <div className="container border rounded-3 p-0 mt-2" 
+         style={{ maxWidth: "658px" }}>
       <p className="text-uppercase text-center fs-1 playfair-display">
         Now Streaming!!!
       </p>
       <div
-        className="container text-center mb-4"
+        className="container text-center"
         dangerouslySetInnerHTML={{
           __html: `
         <iframe

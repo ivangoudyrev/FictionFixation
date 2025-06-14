@@ -1,10 +1,10 @@
 function Note() {
   return (
     <div 
-      className="container border rounded-3 mt-3 playfair-display" 
+      className="container border rounded-3 p-0 mt-2 playfair-display" 
       style={{ maxWidth: "658px" }}
     >
-      <div className="p-4 m-0 bg-light rounded-4 shadow-sm">
+      <div className="p-4 m-2 bg-light rounded-3 shadow-sm">
         <h2 className="text-center text-uppercase fw-bold mb-3">
           Join Us Weekly!
         </h2>

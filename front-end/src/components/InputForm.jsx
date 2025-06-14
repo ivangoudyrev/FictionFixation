@@ -26,7 +26,7 @@ function InputForm() {
 
   return (
     <div
-      className="container border rounded-3 mt-3"
+      className="container border rounded-3 p-0 mt-2"
       style={{ maxWidth: "658px" }}
     >
       <p className="text-uppercase text-center fs-1 mb-0 playfair-display">
@@ -39,7 +39,7 @@ function InputForm() {
         (as long as they don't make it weird).
       </p>
       <form
-        className="row g-3 text-secondary bg-light rounded m-0"
+        className="row g-3 text-secondary bg-light rounded-3 p-4 m-2"
         onSubmit={sendEmail}
       >
         <div className="col-md-6">

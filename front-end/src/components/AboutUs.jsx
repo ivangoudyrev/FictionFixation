@@ -3,10 +3,10 @@ import Message from "./Message";
 function AboutUs() {
   return (
     <div
-      className="container border rounded-3 mt-3 playfair-display"
+      className="container border rounded-3 p-0 mt-2 playfair-display"
       style={{ maxWidth: "658px" }}
     >
-      <div className="p-1 m-0 bg-light rounded-4 shadow-sm">
+      <div className="p-1 m-2 bg-light rounded-3 shadow-sm">
         <h2 className="text-center text-uppercase fw-bold mb-3">About Us</h2>
         <div className="bg-white rounded-4 p-1">
           <Message sender="Courtney" text="Hi, I'm Courtney"/>

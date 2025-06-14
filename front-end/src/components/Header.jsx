@@ -22,8 +22,8 @@ function Header() {
           </picture>
         </div>
       </div>
-      <div className="p-3 bg-dark">
-        <div className="container d-flex justify-content-center gap-2 flex-wrap">
+      <div className="p-1 bg-dark">
+        <div className="container d-flex justify-content-center gap-1 flex-wrap">
           <ButtonApple />
           <ButtonSpotify />
           <ButtonAudible />
